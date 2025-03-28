@@ -3,60 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYLE ɅV - En construction</title>
+    <title>KYLE ɅV - Entraîneur personnel certifié</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
         .container {
-            max-width: 600px;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
         }
         h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 5px;
         }
-        p {
-            font-size: 1.2rem;
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 30px;
         }
-        /* Style du bouton Instagram */
-        .insta-btn {
+        .location {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .cta-btn, .insta-btn {
             display: inline-block;
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            color: white;
             padding: 12px 25px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
+            margin: 10px 5px;
             font-family: Arial, sans-serif;
             transition: 0.3s;
-            margin-top: 15px;
+        }
+        .cta-btn {
+            background-color: white;
+            color: black;
+        }
+        .cta-btn:hover {
+            background-color: #ddd;
+        }
+        .insta-btn {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
         }
         .insta-btn:hover {
             filter: brightness(1.2);
+        }
+        .profiles {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .profile {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        .profile:nth-child(1) { animation-delay: 0.1s; }
+        .profile:nth-child(2) { animation-delay: 0.2s; }
+        .profile:nth-child(3) { animation-delay: 0.3s; }
+        .profile:nth-child(4) { animation-delay: 0.4s; }
+        .profile:nth-child(5) { animation-delay: 0.5s; }
+        .profile:nth-child(6) { animation-delay: 0.6s; }
+        .profile:nth-child(7) { animation-delay: 0.7s; }
+        .profile:nth-child(8) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile h3 {
+            margin-top: 0;
+            color: #eee;
+        }
+        .footer {
+            margin-top: 60px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 30px auto 0 auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ccc;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Site en construction</h1>
-        <p>Le site <strong>KYLE ɅV</strong> est en cours de finalisation.</p>
-        <p>Vous pourrez bientôt y retrouver toutes les informations sur les services proposés.</p>
-        <p>📧 Pour toute question, contactez-moi à : <a href="mailto:contact@kyle-av.com" style="color: white;">contact@kyle-av.com</a></p>
+        <h1>KYLE ɅV</h1>
+        <h2>Entraîneur personnel certifié</h2>
+        <div class="location">
+            Basic-Fit Wemmel<br>
+            Chaussée de Bruxelles 397<br>
+            1780 Wemmel
+        </div>
 
-        <!-- Bouton Instagram -->
-        <p>
-            <a href="https://www.instagram.com/kyleayllonverelst/" target="_blank" class="insta-btn">
-                Suivez-moi sur Instagram
-            </a>
-        </p>
+        <a href="#formulaire" class="cta-btn">Réserver une séance</a>
+        <a href="https://www.instagram.com/kyleayllonverelst/" target="_blank" class="insta-btn">Suivez-moi sur Instagram</a>
+
+        <div class="profiles">
+            <div class="profile">
+                <h3>Débutants, personnes en reprise & en surpoids</h3>
+                <p>Ce profil concerne les personnes qui reprennent une activité physique après une longue pause, ou qui n'ont jamais réellement pratiqué de sport. Il inclut aussi celles et ceux qui ressentent une gêne liée à leur poids ou à une perte de forme générale. L'objectif ici est de retrouver des sensations de mouvement justes, de reconstruire les bases posturales et de reprendre confiance dans un corps parfois perçu comme limité. L'accompagnement se fait avec progressivité, sans pression, en respectant la mobilité, la fatigue et les douleurs articulaires.</p>
+            </div>
+            <div class="profile">
+                <h3>Profils actifs avec peu de temps</h3>
+                <p>Ce profil s'adresse aux personnes dont le rythme de vie est soutenu : professionnels, entrepreneurs, étudiants engagés… Leur principal frein est le temps, mais leur volonté est présente. L'objectif est de maintenir un haut niveau d'énergie, de santé et de présence physique, sans empiéter sur le reste de la vie. L'approche privilégie des séances structurées, condensées et efficaces, centrées sur l'essentiel : mobilité, force fonctionnelle, endurance métabolique.</p>
+            </div>
+            <div class="profile">
+                <h3>Corps en transformation (hommes & femmes)</h3>
+                <p>Ce profil réunit deux intentions complémentaires : pour les hommes, l'accent est souvent mis sur la prise de masse musculaire, la force, la densité physique. Pour les femmes, la priorité est souvent la tonicité, la définition de la silhouette, l'endurance. Dans les deux cas, l'objectif est une évolution visible, mesurable et maîtrisée. L'accompagnement propose une programmation adaptée au métabolisme, au rythme de vie et aux capacités actuelles du corps, avec un suivi clair et structuré.</p>
+            </div>
+            <div class="profile">
+                <h3>Réhabilitation & reprise après blessure</h3>
+                <p>Ce profil s'adresse aux personnes ayant traversé une blessure, une opération ou une période d'arrêt prolongé. Il inclut également ceux qui ressentent une douleur persistante ou une faiblesse localisée. L'objectif est de retrouver une mobilité fonctionnelle, de réduire les compensations et d'apprendre à rebâtir la force de manière ciblée et maîtrisée. L'accompagnement se concentre sur le contrôle moteur, la progression technique et le respect des limites actuelles.</p>
+            </div>
+            <div class="profile">
+                <h3>Seniors & longévité active</h3>
+                <p>Ce profil concerne les personnes de 60 ans et plus, qui souhaitent entretenir ou retrouver leurs capacités physiques. Il ne s'agit pas ici de performance, mais de préserver la qualité de vie, de maintenir l'autonomie et de prévenir les risques liés à l'âge. L'approche repose sur des exercices simples, progressifs et sécurisés, adaptés aux besoins individuels : renforcement, coordination, respiration, ancrage postural.</p>
+            </div>
+            <div class="profile">
+                <h3>Fatigue mentale, stress ou burn-out</h3>
+                <p>Ce profil regroupe les personnes traversant une période de surcharge mentale ou de perte d'énergie durable. Les symptômes sont souvent diffus : fatigue chronique, tensions physiques, baisse de motivation. L'objectif est de réintégrer le corps comme allié de la récupération, en favorisant le mouvement doux, la respiration et la concentration sur des gestes simples. L'accompagnement vise à réduire la charge physique et psychique, sans renoncer au progrès.</p>
+            </div>
+            <div class="profile">
+                <h3>Jeunes mamans & post-partum</h3>
+                <p>Ce profil concerne les femmes ayant accouché récemment ou dans les mois précédents. Il inclut celles qui souhaitent retrouver leur tonicité, réduire une sensation de relâchement, ou simplement reprendre le contact avec leur corps dans un cadre bienveillant. L'attention est portée sur le plancher pelvien, les abdominaux profonds, la respiration et la gestion de la fatigue. L'approche est évolutive, respectueuse du rythme post-natal.</p>
+            </div>
+            <div class="profile">
+                <h3>Adolescents & jeunes adultes motivés</h3>
+                <p>Ce profil regroupe les jeunes de 14 à 20 ans qui cherchent à se renforcer, à mieux comprendre leur corps ou à s'initier à l'entraînement. Leur motivation est réelle, mais leur cadre technique est souvent fragile. L'objectif est d'apprendre à s'entraîner intelligemment, sans blessure ni mimétisme hasardeux. L'accompagnement transmet les fondations du mouvement, le respect du rythme et une forme de discipline intérieure qui les suivra bien au-delà du sport.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2 id="formulaire">Prendre contact</h2>
+            <form action="mailto:contact@kyle-av.com" method="post" enctype="text/plain">
+                <input type="text" name="Nom" placeholder="Votre nom" required>
+                <input type="email" name="Email" placeholder="Votre e-mail" required>
+                <textarea name="Message" rows="5" placeholder="Votre message ou demande de rendez-vous" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
