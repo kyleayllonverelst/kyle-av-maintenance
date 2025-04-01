@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYLE ɅV - Entrenador personal certificado</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .language-switcher {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      border-radius: 6px;
+      text-align: left;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 8px 12px;
+      text-decoration: none !important;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #444;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .location {
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta-btn, .insta-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 5px;
+      font-family: Arial, sans-serif;
+      transition: 0.3s;
+    }
+    .cta-btn {
+      background-color: white;
+      color: black;
+    }
+    .cta-btn:hover {
+      background-color: #ddd;
+    }
+    .insta-btn {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      color: white;
+    }
+    .insta-btn:hover {
+      filter: brightness(1.2);
+    }
+    .profiles {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 50px;
+      text-align: left;
+    }
+    .profile {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .profile:nth-child(1) { animation-delay: 0.1s; }
+    .profile:nth-child(2) { animation-delay: 0.2s; }
+    .profile:nth-child(3) { animation-delay: 0.3s; }
+    .profile:nth-child(4) { animation-delay: 0.4s; }
+    .profile:nth-child(5) { animation-delay: 0.5s; }
+    .profile:nth-child(6) { animation-delay: 0.6s; }
+    .profile:nth-child(7) { animation-delay: 0.7s; }
+    .profile:nth-child(8) { animation-delay: 0.8s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .profile h3 {
+      margin-top: 0;
+      color: #eee;
+    }
+    .pricing {
+      margin-top: 60px;
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .pricing h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .pricing ul {
+      list-style: none;
+      padding: 0;
+    }
+    .pricing li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .footer {
+      margin-top: 60px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: 30px auto 0 auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="language-switcher">
+    <div class="dropdown">
+      <button class="dropbtn">🇪🇸 ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">🇫🇷</a>
+        <a href="index-nl.html">🇳🇱</a>
+        <a href="index-en.html">🇬🇧</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>KYLE ɅV</h1>
+    <h2>Entrenador personal certificado</h2>
+    <div class="location">
+      Basic-Fit Wemmel<br>
+      Chaussée de Bruxelles 397<br>
+      1780 Wemmel
+    </div>
+
+    <a href="#formulario" class="cta-btn">Reservar una sesión</a>
+    <a href="https://www.instagram.com/kyleayllonverelst/" target="_blank" class="insta-btn">Sígueme en Instagram</a>
+
+    <div class="profiles">
+      <div class="profile">
+        <h3>Principiantes y personas con sobrepeso</h3>
+        <p>Para quienes retoman la actividad física tras una larga pausa o se inician por primera vez. Incluye a quienes sienten incomodidad con su cuerpo o desean recuperar su forma. Trabajamos desde lo esencial: posturas justas, confianza en el movimiento y acompañamiento progresivo, sin presión y con respeto por la movilidad, la fatiga y las articulaciones.</p>
+      </div>
+      <div class="profile">
+        <h3>Perfiles activos con poco tiempo</h3>
+        <p>Ideal para profesionales, emprendedores y estudiantes con agendas intensas. El objetivo es mantener la energía, la salud y la presencia física sin sacrificar otras prioridades. Las sesiones son estructuradas, condensadas y centradas en lo esencial: movilidad, fuerza funcional y resistencia metabólica.</p>
+      </div>
+      <div class="profile">
+        <h3>Cuerpos en transformación (hombres y mujeres)</h3>
+        <p>Hombres que buscan masa muscular, fuerza y densidad; mujeres que priorizan tonicidad, definición y resistencia. En ambos casos, el acompañamiento es personalizado, adaptado al metabolismo, estilo de vida y capacidades actuales, con una evolución clara y visible.</p>
+      </div>
+      <div class="profile">
+        <h3>Rehabilitación y regreso tras lesión</h3>
+        <p>Para quienes han pasado por una lesión, cirugía o largo periodo de inactividad. Incluye a quienes sufren dolor persistente o debilidad localizada. Trabajamos movilidad funcional, control motor y fortalecimiento progresivo, siempre respetando los límites actuales del cuerpo.</p>
+      </div>
+      <div class="profile">
+        <h3>Mayores y longevidad activa</h3>
+        <p>Para personas mayores de 60 años que desean mantener o recuperar sus capacidades físicas. No se trata de rendimiento, sino de calidad de vida, autonomía y prevención. Las sesiones son simples, seguras y adaptadas: refuerzo, coordinación, respiración y postura.</p>
+      </div>
+      <div class="profile">
+        <h3>Fatiga mental, estrés o agotamiento</h3>
+        <p>Para quienes atraviesan un periodo de sobrecarga mental o pérdida de energía. El objetivo es recuperar el cuerpo como aliado, con movimientos suaves, respiración y enfoque en gestos simples. Un proceso que alivia sin perder eficacia.</p>
+      </div>
+      <div class="profile">
+        <h3>Madres recientes y postparto</h3>
+        <p>Para mujeres que han dado a luz recientemente y desean reconectar con su cuerpo. Nos enfocamos en el suelo pélvico, abdominales profundos, respiración y gestión del cansancio. El acompañamiento es evolutivo, atento y respetuoso del ritmo de cada mujer.</p>
+      </div>
+      <div class="profile">
+        <h3>Adolescentes y jóvenes motivados</h3>
+        <p>Para jóvenes de entre 16 y 20 años que quieren fortalecerse y comprender mejor su cuerpo. Aprendemos a entrenar con inteligencia, evitando imitaciones peligrosas, construyendo fundamentos técnicos y una disciplina interior que perdure.</p>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <h2>Tarifas</h2>
+      <p>Las sesiones se facturan individualmente, con posibilidad de reservar varias con antelación.</p>
+      <ul>
+        <li><strong>Consulta inicial:</strong> Gratuito</li>
+        <li><strong>Entrenamiento individual (1h):</strong> 40€</li>
+        <li><strong>Entrenamiento en pareja (1h):</strong> 70€ (35€/persona)</li>
+        <li><strong>Entrenamiento a distancia (mensual):</strong> 120€<br>
+          <span style="font-size: 0.95em; opacity: 0.8;">Plan personalizado + seguimiento semanal</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <h2 id="formulario">Contacto</h2>
+      <form action="mailto:contact@kyle-av.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Tu nombre" required>
+        <input type="email" name="Email" placeholder="Tu correo electrónico" required>
+        <textarea name="Mensaje" rows="5" placeholder="Tu mensaje o solicitud de reserva" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
