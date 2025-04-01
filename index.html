@@ -12,6 +12,47 @@
             margin: 0;
             padding: 0;
         }
+
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.9rem;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 6px;
+            text-align: left;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none !important;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #444;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         .container {
             padding: 40px 20px;
             max-width: 900px;
@@ -142,6 +183,17 @@
     </style>
 </head>
 <body>
+    <div class="language-switcher">
+        <div class="dropdown">
+            <button class="dropbtn">🇫🇷 ▼</button>
+            <div class="dropdown-content">
+                <a href="index-nl.html">🇳🇱</a>
+                <a href="index-en.html">🇬🇧</a>
+                <a href="index-es.html">🇪🇸</a>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h1>KYLE ɅV</h1>
         <h2>Entraîneur personnel certifié</h2>
