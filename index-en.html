@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLE ɅV - Certified Personal Trainer</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .language-switcher {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.9rem;
+        }
+        .language-switcher a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .language-switcher a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .location {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .cta-btn, .insta-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            font-family: Arial, sans-serif;
+            transition: 0.3s;
+        }
+        .cta-btn {
+            background-color: white;
+            color: black;
+        }
+        .cta-btn:hover {
+            background-color: #ddd;
+        }
+        .insta-btn {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+        .insta-btn:hover {
+            filter: brightness(1.2);
+        }
+        .profiles {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .profile {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        .profile:nth-child(1) { animation-delay: 0.1s; }
+        .profile:nth-child(2) { animation-delay: 0.2s; }
+        .profile:nth-child(3) { animation-delay: 0.3s; }
+        .profile:nth-child(4) { animation-delay: 0.4s; }
+        .profile:nth-child(5) { animation-delay: 0.5s; }
+        .profile:nth-child(6) { animation-delay: 0.6s; }
+        .profile:nth-child(7) { animation-delay: 0.7s; }
+        .profile:nth-child(8) { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .profile h3 {
+            margin-top: 0;
+            color: #eee;
+        }
+        .pricing {
+            margin-top: 60px;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .pricing h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .pricing ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .footer {
+            margin-top: 60px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 30px auto 0 auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+  <div class="dropdown">
+    <button class="dropbtn">🇬🇧 ▼</button>
+    <div class="dropdown-content">
+      <a href="index.html">🇫🇷</a>
+      <a href="index-nl.html">🇳🇱</a>
+      <a href="index-es.html">🇪🇸</a>
+    </div>
+  </div>
+</div>
+<style>
+.language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+  text-align: left;
+}
+.dropdown-content a {
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none !important;
+}
+.dropdown-content a:hover {
+  background-color: #444;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+    <div class="container">
+        <h1>KYLE ɅV</h1>
+        <h2>Certified Personal Trainer</h2>
+        <div class="location">
+            Basic-Fit Wemmel<br>
+            Chaussée de Bruxelles 397<br>
+            1780 Wemmel
+        </div>
+
+        <a href="#form" class="cta-btn">Book a Session</a>
+        <a href="https://www.instagram.com/kyleayllonverelst/" target="_blank" class="insta-btn">Follow me on Instagram</a>
+
+        <div class="profiles">
+            <div class="profile">
+                <h3>Beginners and individuals with excess weight</h3>
+                <p>This profile concerns people who are returning to physical activity after a long break or have never truly exercised. It also includes those who feel limited by their weight or a general lack of fitness. The goal is to rediscover proper movement, rebuild postural foundations, and regain confidence in a body sometimes perceived as an obstacle. The support is progressive, respectful of mobility, fatigue and joint pain.</p>
+            </div>
+            <div class="profile">
+                <h3>Busy professionals and active individuals</h3>
+                <p>For those with fast-paced lives: professionals, entrepreneurs, committed students… Time is limited, but motivation is there. The goal is to stay energized, healthy and physically present without disrupting other life priorities. Sessions are structured, efficient and focused on what matters most: mobility, functional strength, and metabolic endurance.</p>
+            </div>
+            <div class="profile">
+                <h3>Bodies in transformation (men & women)</h3>
+                <p>This profile brings together two common goals: men often seek muscle gain, strength and physical density, while women tend to focus on tone, definition and endurance. In both cases, the goal is measurable, visible progress. The approach is tailored to your metabolism, lifestyle and current capacity, with a clear and structured follow-up.</p>
+            </div>
+            <div class="profile">
+                <h3>Rehabilitation and recovery after injury</h3>
+                <p>Designed for those coming back from an injury, surgery or extended break. It also includes people dealing with chronic pain or localized weakness. The aim is to restore functional mobility, reduce compensations, and rebuild strength intelligently. Emphasis is placed on motor control, technical progression and respecting current limitations.</p>
+            </div>
+            <div class="profile">
+                <h3>Seniors and active longevity</h3>
+                <p>For individuals aged 60 and over who want to maintain or recover physical capacity. The focus isn’t performance, but quality of life, autonomy, and injury prevention. The sessions are safe, progressive and adapted to your needs: strength, coordination, breathing and postural awareness.</p>
+            </div>
+            <div class="profile">
+                <h3>Mental fatigue, stress or burnout</h3>
+                <p>This profile includes those experiencing overload or long-term fatigue. Symptoms are often diffuse: chronic tiredness, muscle tension, low motivation. The goal is to reconnect with the body as a recovery tool, using gentle movement, breathing and mindful effort. The process is soothing but constructive.</p>
+            </div>
+            <div class="profile">
+                <h3>New mothers and postpartum</h3>
+                <p>For women who recently gave birth and wish to regain tone, reduce the sensation of looseness, or reconnect with their bodies in a caring environment. The focus is on the pelvic floor, deep core muscles, breathing and fatigue management. The sessions are respectful of your postpartum rhythm.</p>
+            </div>
+            <div class="profile">
+                <h3>Teenagers and young adults</h3>
+                <p>For those aged 16 to 20 who want to get stronger, understand their body, or start training. They’re motivated but often lack technical foundation. The goal is to learn how to train safely and effectively, with smart routines and inner discipline that lasts beyond the gym.</p>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Pricing</h2>
+            <p>Sessions are priced individually, with the option to book several in advance.</p>
+            <ul>
+                <li><strong>Introductory session:</strong> Free</li>
+                <li><strong>One-on-one coaching (1h):</strong> €40</li>
+                <li><strong>Duo coaching (1h):</strong> €70 (€35/person)</li>
+                <li><strong>Remote coaching (monthly):</strong> €120<br>
+                    <span style="font-size: 0.95em; opacity: 0.8;">Personalized plan + weekly check-in</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <h2 id="form">Contact</h2>
+            <form action="mailto:contact@kyle-av.com" method="post" enctype="text/plain">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="5" placeholder="Your message or booking request" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+    </div>
+</body>
+</html>
